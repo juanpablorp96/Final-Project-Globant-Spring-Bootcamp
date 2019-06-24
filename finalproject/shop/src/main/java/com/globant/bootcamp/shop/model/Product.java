@@ -1,24 +1,23 @@
 package com.globant.bootcamp.shop.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "product")
-@NamedQuery(name="Product.findByIdentification", query="Select p from Product p where p.id = ?1" )
-public class Product {
+@NamedQuery(name="Product.findByIdentification", query="Select p from Product p where p.id_product = ?1" )
+public class Product extends AuditModel{
     @Id
-    private int id;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int id_product;
     private String name;
     private int stock;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_store", nullable = false)
+    private Store store;
 }
-
-
-//@GeneratedValue(generator="system-uuid")
-//@GenericGenerator(name="system-uuid", strategy="uuid2")

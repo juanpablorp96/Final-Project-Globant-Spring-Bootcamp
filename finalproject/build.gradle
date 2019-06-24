@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.6.RELEASE'
 	id 'java'
+	id 'org.hidetake.swagger.generator' version '2.10.0'
 }
 
 allprojects {
@@ -28,5 +29,8 @@ allprojects {
 		implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 		implementation('org.postgresql:postgresql')
 		testImplementation 'org.springframework.boot:spring-boot-starter-test'
+		implementation 'org.webjars:swagger-ui:3.10.0'
+		compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+		compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 	}
 }

@@ -39,4 +39,13 @@ public class ProductEntityManager {
     public List<Product> findAll() {
         return this.productRepository.findAll();
     }
+
+    public long count(){
+        return this.productRepository.count();
+    }
+
+    public Product findByIdentification(int id){
+        return this.productRepository.findByIdentification(id);
+    }
+
 }
