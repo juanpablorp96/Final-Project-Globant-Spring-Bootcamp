@@ -1,10 +1,7 @@
 package com.globant.bootcamp.shop.endpoint;
 
-import com.globant.bootcamp.shop.bussiness.repository.ProductEntityManager;
-import com.globant.bootcamp.shop.bussiness.repository.StoreEntityManager;
-import com.globant.bootcamp.shop.model.Product;
+import com.globant.bootcamp.shop.bussiness.repository.StoreRepository;
 import com.globant.bootcamp.shop.model.Store;
-import com.globant.bootcamp.shop.resources.vo.ProductVO;
 import com.globant.bootcamp.shop.resources.vo.StoreVO;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -21,20 +18,21 @@ import java.util.Optional;
 public class StoreEndPoint {
 
 
-    private final StoreEntityManager storeEntityManager;
+    private final StoreRepository storeRepository;
 
-    public StoreEndPoint(StoreEntityManager storeEntityManager) {
-        this.storeEntityManager = storeEntityManager;
+    public StoreEndPoint(StoreRepository storeRepository) {
+        this.storeRepository = storeRepository;
     }
+
 
     @GetMapping("/total")
     public long getTotalStores() {
-        return storeEntityManager.count();
+        return storeRepository.count();
     }
 
     @GetMapping("/{id_store}")
     public Optional<Store> findStoreById(@PathVariable("id_store") @NotNull int id_store) {
-        return storeEntityManager.findById(id_store);
+        return storeRepository.findById(id_store);
     }
 
     @PostMapping
@@ -44,9 +42,9 @@ public class StoreEndPoint {
         store.setName(storeVO.getName());
         store.setAddress(storeVO.getAddress());
         store.setPhone(storeVO.getPhone());
+        store.setProducts(storeVO.getProducts());
 
-
-        return new ResponseEntity<>(this.storeEntityManager.create(store), HttpStatus.CREATED);
+        return new ResponseEntity<>(this.storeRepository.save(store), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id_store}")
@@ -56,7 +54,7 @@ public class StoreEndPoint {
     public ResponseEntity<Store> updateStore(@PathVariable("id_store") int id_store,
                                                  StoreVO storeVO) {
 
-        Store store = this.storeEntityManager.findByIdentification(id_store);
+        Store store = this.storeRepository.findByIdentification(id_store);
 
         if (store == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -67,7 +65,7 @@ public class StoreEndPoint {
             store.setPhone(storeVO.getPhone());
         }
 
-        return new ResponseEntity<>(this.storeEntityManager.update(store), HttpStatus.OK);
+        return new ResponseEntity<>(this.storeRepository.save(store), HttpStatus.OK);
     }
 
 
