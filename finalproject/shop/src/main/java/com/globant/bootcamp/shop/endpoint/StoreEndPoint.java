@@ -97,6 +97,7 @@ public class StoreEndPoint {
         product.setName(productVO.getName());
         product.setStock(productVO.getStock());
         product.setStore(store);
+        //prueba
 
         /*
         //Set<Product> products = store.getProducts();
