@@ -13,6 +13,4 @@ public class StoreVO {
     private String name;
     private String address;
     private String phone;
-    private Set<Product> products;
-    private Set<Employee> employees;
 }

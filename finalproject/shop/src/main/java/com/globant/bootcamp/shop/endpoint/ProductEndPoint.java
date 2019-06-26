@@ -29,8 +29,8 @@ public class ProductEndPoint {
     }
 
     @GetMapping("/{id_product}")
-    public Optional<Product> findProductById(@PathVariable("id_product") @NotNull int id_product) {
-        return productRepository.findById(id_product);
+    public Product findProductById(@PathVariable("id_product") @NotNull int id_product) {
+        return productRepository.findByIdentification(id_product);
     }
 
     @PostMapping
@@ -39,7 +39,6 @@ public class ProductEndPoint {
         product.setId_product(productVO.getId_product());
         product.setName(productVO.getName());
         product.setStock(productVO.getStock());
-
 
         return new ResponseEntity<>(this.productRepository.save(product), HttpStatus.CREATED);
     }
