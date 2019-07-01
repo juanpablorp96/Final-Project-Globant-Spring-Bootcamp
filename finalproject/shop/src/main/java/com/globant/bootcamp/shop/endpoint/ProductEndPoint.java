@@ -1,6 +1,6 @@
 package com.globant.bootcamp.shop.endpoint;
 
-import com.globant.bootcamp.shop.bussiness.repository.ProductRepository;
+import com.globant.bootcamp.shop.bussiness.service.ProductService;
 import com.globant.bootcamp.shop.model.Product;
 import com.globant.bootcamp.shop.resources.vo.ProductVO;
 import io.swagger.annotations.ApiOperation;
@@ -11,26 +11,32 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
+import java.util.List;
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
 public class ProductEndPoint {
 
-    private final ProductRepository productRepository;
+    private final ProductService productService;
 
-    public ProductEndPoint(ProductRepository productRepository) {
-        this.productRepository = productRepository;
+    public ProductEndPoint(ProductService productService) {
+        this.productService = productService;
+    }
+
+    @GetMapping
+    public List<Product> getProducts() {
+        return productService.findAll();
     }
 
     @GetMapping("/total")
     public long getTotalProducts() {
-        return productRepository.count();
+        return productService.count();
     }
 
     @GetMapping("/{id_product}")
     public Product findProductById(@PathVariable("id_product") @NotNull int id_product) {
-        return productRepository.findByIdentification(id_product);
+        return productService.findByIdentification(id_product);
     }
 
     @PostMapping
@@ -40,27 +46,35 @@ public class ProductEndPoint {
         product.setName(productVO.getName());
         product.setStock(productVO.getStock());
 
-        return new ResponseEntity<>(this.productRepository.save(product), HttpStatus.CREATED);
+        return new ResponseEntity<>(this.productService.create(product), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id_product}")
     @ApiOperation(value = "Update product", notes = "Service to update a product")
     @ApiResponses(value = { @ApiResponse(code = 201, message = "Product updated success"),
             @ApiResponse(code = 404, message = "Product not found") })
-    public ResponseEntity<Product> updateProduct(@PathVariable("id_product") int id_product,
-                                                 ProductVO productVO) {
+    public ResponseEntity<Product> updateProduct(@PathVariable("id_product") @NotNull int id_product,
+                                                 @RequestBody ProductVO productVO) {
 
-        Product product = this.productRepository.findByIdentification(id_product);
+        Optional<Product> product = productService.findById(id_product);
 
-        if (product == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        if (product.isPresent()) {
+            product.get().setName(productVO.getName());
+            product.get().setStock(productVO.getStock());
 
-        } else {
-            product.setName(productVO.getName());
-            product.setStock(productVO.getStock());
+            return new ResponseEntity<>(productService.update(product.get()), HttpStatus.OK);
         }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
 
-        return new ResponseEntity<>(this.productRepository.save(product), HttpStatus.OK);
+    @DeleteMapping("/{id_product}")
+    public HttpStatus deleteProduct(@PathVariable("id_product") @NotNull int id_product){
+        if(productService.findById(id_product).isPresent()){
+            productService.deleteById(id_product);
+
+            return HttpStatus.OK;
+        }
+        return HttpStatus.BAD_REQUEST;
     }
 
 

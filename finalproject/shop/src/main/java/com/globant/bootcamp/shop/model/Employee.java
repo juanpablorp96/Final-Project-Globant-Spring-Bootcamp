@@ -1,7 +1,11 @@
 package com.globant.bootcamp.shop.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 
 @Data
@@ -13,11 +17,12 @@ public class Employee extends AuditModel{
     //@GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id_employee;
     private String name;
-    private String address;
     private String phone;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "id_store")
-    @JsonManagedReference
+    @JsonIgnore
     private Store store;
+
 }

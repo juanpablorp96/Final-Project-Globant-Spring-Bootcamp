@@ -1,0 +1,16 @@
+{
+  "id" : "82527d96-bcb9-41dc-88ea-6d3dd6af4e7f",
+  "request" : {
+    "url" : "/client/stores/1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"phone\":\"12345\",\"name\":\"Exito\",\"id\":1}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "82527d96-bcb9-41dc-88ea-6d3dd6af4e7f"
+}

@@ -11,4 +11,5 @@ public interface StoreRepository extends JpaRepository<Store, Integer> {
 
     @Query("Select s from Store s where s.id_store = :id_store")
     Store findByIdentification(@Param("id_store") int id_store);
+
 }

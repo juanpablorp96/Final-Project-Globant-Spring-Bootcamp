@@ -1,13 +1,16 @@
 package com.globant.bootcamp.shop.model;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 
+@EqualsAndHashCode(callSuper=false)
 @Data
 @Entity
 @Table(name = "product")
@@ -21,8 +24,10 @@ public class Product extends AuditModel{
     private int stock;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "id_store")
-    @JsonManagedReference
+    @JsonIgnore
     private Store store;
+
 
 }
