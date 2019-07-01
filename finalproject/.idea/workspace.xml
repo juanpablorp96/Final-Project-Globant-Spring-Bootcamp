@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9140262-e26b-4bac-833e-a443a4ff2b9c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java" afterDir="false" />
-    </list>
+    <list default="true" id="e9140262-e26b-4bac-833e-a443a4ff2b9c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -444,12 +442,12 @@
       <workItem from="1561316967312" duration="20626000" />
       <workItem from="1561394708362" duration="14916000" />
       <workItem from="1561470418517" duration="2115000" />
-      <workItem from="1561498689130" duration="15199000" />
+      <workItem from="1561498689130" duration="15252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53835000" />
+    <option name="totallyTimeSpent" value="53888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
