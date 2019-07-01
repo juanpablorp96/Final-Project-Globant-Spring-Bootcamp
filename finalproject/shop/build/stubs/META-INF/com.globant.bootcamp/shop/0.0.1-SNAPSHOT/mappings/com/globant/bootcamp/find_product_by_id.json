@@ -1,0 +1,16 @@
+{
+  "id" : "88bc739d-2755-4adb-877e-99822bdcebd2",
+  "request" : {
+    "url" : "/stores/1/products/1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id_product\":\"1\",\"name\":\"Tv\",\"stock\":\"100\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "88bc739d-2755-4adb-877e-99822bdcebd2"
+}

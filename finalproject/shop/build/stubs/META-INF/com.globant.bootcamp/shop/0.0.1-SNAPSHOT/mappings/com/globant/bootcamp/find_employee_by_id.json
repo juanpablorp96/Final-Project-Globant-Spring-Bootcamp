@@ -1,0 +1,16 @@
+{
+  "id" : "57d3981e-daa9-49c6-9596-29488dfee212",
+  "request" : {
+    "url" : "/stores/1/employees/1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"phone\":\"320-3684334\",\"id_employee\":\"1\",\"name\":\"Juan Pablo\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "57d3981e-daa9-49c6-9596-29488dfee212"
+}

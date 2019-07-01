@@ -55,6 +55,6 @@ dependencyManagement {
 contracts {
 	//packageWithBaseClasses = 'com.glb.bootcamp'
 	baseClassMappings {
-		baseClassMapping("com.globant.bootcamp.shop.*", "com.globant.bootcamp.shop.BaseClass")
+		baseClassMapping("com.globant.bootcamp.*", "com.globant.bootcamp.shop.BaseClass")
 	}
 }

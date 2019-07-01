@@ -16,6 +16,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -161,7 +162,7 @@ public class StoreEndPoint {
         if(storeService.findById(id_store).isPresent()){
             Optional<Product> product = productService.findById(id_product);
             if(product.isPresent()){
-                return new ResponseEntity<>(product.get(), HttpStatus.ACCEPTED);
+                return new ResponseEntity<>(product.get(), HttpStatus.OK);
             }
         }
 
@@ -236,7 +237,7 @@ public class StoreEndPoint {
         if(storeService.findById(id_store).isPresent()){
             Optional<Employee> employee = employeeService.findById(id_employee);
             if(employee.isPresent()){
-                return new ResponseEntity<>(employee.get(), HttpStatus.ACCEPTED);
+                return new ResponseEntity<>(employee.get(), HttpStatus.OK);
             }
         }
 
@@ -321,7 +322,7 @@ public class StoreEndPoint {
             if(employeeService.findById(id_employee).isPresent()){
                 Optional<Address> address = addressService.findById(id_address);
                 if(address.isPresent()) {
-                    return new ResponseEntity<>(address.get(), HttpStatus.ACCEPTED);
+                    return new ResponseEntity<>(address.get(), HttpStatus.OK);
                 }
             }
         }

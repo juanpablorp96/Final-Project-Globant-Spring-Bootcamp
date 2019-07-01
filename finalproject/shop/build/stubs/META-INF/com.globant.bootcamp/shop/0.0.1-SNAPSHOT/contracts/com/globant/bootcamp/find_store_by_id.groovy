@@ -6,7 +6,7 @@ Contract.make {
 	description "should return store by id=1"
 
 	request {
-		url "/client/stores/1"
+		url "/stores/1"
 		method GET()
 	}
 
@@ -16,7 +16,7 @@ Contract.make {
 			contentType applicationJson()
 		}
 		body (
-			id: 1,
+			id_store: "1",
 			name: "Exito",
 			phone: "12345"
 		)

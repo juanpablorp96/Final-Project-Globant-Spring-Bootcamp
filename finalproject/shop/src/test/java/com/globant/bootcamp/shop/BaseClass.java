@@ -1,7 +1,13 @@
 package com.globant.bootcamp.shop;
 
+import com.globant.bootcamp.shop.bussiness.service.AddressService;
+import com.globant.bootcamp.shop.bussiness.service.EmployeeService;
+import com.globant.bootcamp.shop.bussiness.service.ProductService;
 import com.globant.bootcamp.shop.bussiness.service.StoreService;
 import com.globant.bootcamp.shop.endpoint.StoreEndPoint;
+import com.globant.bootcamp.shop.model.Address;
+import com.globant.bootcamp.shop.model.Employee;
+import com.globant.bootcamp.shop.model.Product;
 import com.globant.bootcamp.shop.model.Store;
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -32,11 +38,35 @@ public abstract class BaseClass {
     @MockBean
     private StoreService storeService;
 
+    @MockBean
+    private ProductService productService;
+
+    @MockBean
+    private EmployeeService employeeService;
+
+    @MockBean
+    private AddressService addressService;
+
     @Before public void setup() {
         RestAssuredMockMvc.standaloneSetup(storeEndPoint);
 
-        Mockito.when(storeService.findByIdentification(1))
-                .thenReturn(new Store(1, "Exito", "12345"));
+        Mockito.when(storeService.findById(1))
+                .thenReturn(java.util.Optional.of(new Store(1, "Exito", "12345")));
+
+        Mockito.when(productService.findById(1))
+                .thenReturn(java.util.Optional.of(new Product(1, "Tv", 100, new Store(1,
+                        "Exito", "12345"))));
+
+        Mockito.when(employeeService.findById(1))
+                .thenReturn(java.util.Optional.of(new Employee(1, "Juan Pablo", "320-3684334",
+                        new Store(1, "Exito", "12345"))));
+
+        Mockito.when(addressService.findById(1))
+                .thenReturn(java.util.Optional.of(new Address(1, "USA", "Florida", "Miami",
+                        "St 123", "010203", new Employee(1, "Juan Pablo",
+                        "320-3684334", new Store(1, "Exito", "12345")))));
+
+
     }
 
 }
