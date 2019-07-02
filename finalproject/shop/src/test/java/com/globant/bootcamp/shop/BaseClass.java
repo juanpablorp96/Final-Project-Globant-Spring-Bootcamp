@@ -15,6 +15,8 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
@@ -65,6 +67,9 @@ public abstract class BaseClass {
                 .thenReturn(java.util.Optional.of(new Address(1, "USA", "Florida", "Miami",
                         "St 123", "010203", new Employee(1, "Juan Pablo",
                         "320-3684334", new Store(1, "Exito", "12345")))));
+
+        Mockito.when(storeService.create(new Store(1, "Exito", "12345")))
+                .thenReturn(new Store(1, "Exito", "12345"));
 
 
     }

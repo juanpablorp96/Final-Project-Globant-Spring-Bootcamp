@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">4</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.734s</div>
+<div class="counter">4.271s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,17 +84,22 @@
 </tr>
 <tr>
 <td class="success">get_employee_from_service_contract</td>
-<td class="success">0.255s</td>
+<td class="success">0.331s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">get_product_from_service_contract</td>
-<td class="success">2.903s</td>
+<td class="success">0.338s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">get_store_from_service_contract</td>
-<td class="success">0.263s</td>
+<td class="success">0.283s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">post_store_from_service_contract</td>
+<td class="success">3.006s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,27 +107,27 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>17:42:26.546 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.globant.bootcamp.client.ClientApplicationTests]
-17:42:26.558 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-17:42:26.569 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-17:42:26.592 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.globant.bootcamp.client.ClientApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-17:42:26.612 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.globant.bootcamp.client.ClientApplicationTests], using SpringBootContextLoader
-17:42:26.616 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.globant.bootcamp.client.ClientApplicationTests]: class path resource [com/globant/bootcamp/client/ClientApplicationTests-context.xml] does not exist
-17:42:26.617 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.globant.bootcamp.client.ClientApplicationTests]: class path resource [com/globant/bootcamp/client/ClientApplicationTestsContext.groovy] does not exist
-17:42:26.617 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.globant.bootcamp.client.ClientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-17:42:26.618 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.globant.bootcamp.client.ClientApplicationTests]: ClientApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:42:26.664 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.globant.bootcamp.client.ClientApplicationTests]
-17:42:26.746 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Usuario\Documents\GitHub\Final-Project-Globant-Spring-Bootcamp\finalproject\client\build\classes\java\main\com\globant\bootcamp\client\ClientApplication.class]
-17:42:26.748 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.globant.bootcamp.client.ClientApplication for test class com.globant.bootcamp.client.ClientApplicationTests
-17:42:26.856 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.globant.bootcamp.client.ClientApplicationTests]: using defaults.
-17:42:26.857 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-17:42:26.877 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1df8f82f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6fe86894, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a927568, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47619575, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d823436, org.springframework.test.context.transaction.TransactionalTestExecutionListener@310253da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@686259a7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2363a3e3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f4c103d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@cf31a8d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7626c5d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@48e41c49, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@7e62090, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@13d56593]
-17:42:26.879 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.globant.bootcamp.client.ClientApplicationTests]
-17:42:26.880 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.globant.bootcamp.client.ClientApplicationTests]
-17:42:26.880 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.globant.bootcamp.client.ClientApplicationTests]
-17:42:26.880 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.globant.bootcamp.client.ClientApplicationTests]
-17:42:26.887 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4c4ff522 testClass = ClientApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@104fd382 testClass = ClientApplicationTests, locations = '{}', classes = '{class com.globant.bootcamp.client.ClientApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6c400c04, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5486479a, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7523a847, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@54dca007], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-17:42:26.909 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+<pre>22:47:33.373 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.globant.bootcamp.client.ClientApplicationTests]
+22:47:33.388 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:47:33.398 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:47:33.423 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.globant.bootcamp.client.ClientApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:47:33.449 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.globant.bootcamp.client.ClientApplicationTests], using SpringBootContextLoader
+22:47:33.455 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.globant.bootcamp.client.ClientApplicationTests]: class path resource [com/globant/bootcamp/client/ClientApplicationTests-context.xml] does not exist
+22:47:33.455 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.globant.bootcamp.client.ClientApplicationTests]: class path resource [com/globant/bootcamp/client/ClientApplicationTestsContext.groovy] does not exist
+22:47:33.456 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.globant.bootcamp.client.ClientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:47:33.457 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.globant.bootcamp.client.ClientApplicationTests]: ClientApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:47:33.513 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.globant.bootcamp.client.ClientApplicationTests]
+22:47:33.598 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Usuario\Documents\GitHub\Final-Project-Globant-Spring-Bootcamp\finalproject\client\build\classes\java\main\com\globant\bootcamp\client\ClientApplication.class]
+22:47:33.600 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.globant.bootcamp.client.ClientApplication for test class com.globant.bootcamp.client.ClientApplicationTests
+22:47:33.713 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.globant.bootcamp.client.ClientApplicationTests]: using defaults.
+22:47:33.714 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:47:33.737 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38871b9d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4aa3f079, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@37bf635b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3b29caf0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bf265fb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e076ac4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@226e79e4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@57655913, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f9023b9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a9427c5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7be4ca2a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6b4a984, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@7847df00, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@73e665c2]
+22:47:33.740 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.globant.bootcamp.client.ClientApplicationTests]
+22:47:33.741 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.globant.bootcamp.client.ClientApplicationTests]
+22:47:33.742 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.globant.bootcamp.client.ClientApplicationTests]
+22:47:33.742 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.globant.bootcamp.client.ClientApplicationTests]
+22:47:33.746 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1a17f4fc testClass = ClientApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6fda261d testClass = ClientApplicationTests, locations = '{}', classes = '{class com.globant.bootcamp.client.ClientApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@665a9126, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@29537fa9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40cd52b0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2b0b45ce], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+22:47:33.768 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -132,42 +137,42 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.4.RELEASE)
 
-2019-07-01 17:42:27.184  INFO 3432 --- [    Test worker] c.g.b.client.ClientApplicationTests      : Starting ClientApplicationTests on ComputadorTutis with PID 3432 (started by Usuario in C:\Users\Usuario\Documents\GitHub\Final-Project-Globant-Spring-Bootcamp\finalproject\client)
-2019-07-01 17:42:27.186  INFO 3432 --- [    Test worker] c.g.b.client.ClientApplicationTests      : No active profile set, falling back to default profiles: default
-2019-07-01 17:42:28.358  INFO 3432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-07-01 17:42:28.385  INFO 3432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2019-07-01 17:42:28.896  INFO 3432 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9620f3cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-07-01 17:42:28.942  INFO 3432 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$15a140fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-07-01 17:42:29.320  INFO 3432 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-07-01 22:47:34.065  INFO 8764 --- [    Test worker] c.g.b.client.ClientApplicationTests      : Starting ClientApplicationTests on ComputadorTutis with PID 8764 (started by Usuario in C:\Users\Usuario\Documents\GitHub\Final-Project-Globant-Spring-Bootcamp\finalproject\client)
+2019-07-01 22:47:34.066  INFO 8764 --- [    Test worker] c.g.b.client.ClientApplicationTests      : No active profile set, falling back to default profiles: default
+2019-07-01 22:47:35.347  INFO 8764 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-01 22:47:35.382  INFO 8764 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-07-01 22:47:35.919  INFO 8764 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$97cdbe1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 22:47:35.971  INFO 8764 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$174e0b4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-01 22:47:36.398  INFO 8764 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-07-01 17:42:29.399  INFO 3432 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2019-07-01 17:42:29.401  INFO 3432 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-07-01 17:42:29.583  INFO 3432 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-07-01 17:42:29.757  INFO 3432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-07-01 17:42:29.851  INFO 3432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-07-01 17:42:29.873  INFO 3432 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-07-01 17:42:30.082  INFO 3432 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
-2019-07-01 17:42:30.091  INFO 3432 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5a0b27
-2019-07-01 17:42:30.331  INFO 3432 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-07-01 17:42:32.196  INFO 3432 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-07-01 17:42:32.280  WARN 3432 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-07-01 17:42:32.931  INFO 3432 --- [    Test worker] c.g.b.client.ClientApplicationTests      : Started ClientApplicationTests in 6.014 seconds (JVM running for 7.341)
-2019-07-01 17:42:32.974  INFO 3432 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
-2019-07-01 17:42:32.981  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
-2019-07-01 17:42:33.162  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
-2019-07-01 17:42:33.187  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
-2019-07-01 17:42:33.189  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
-2019-07-01 17:42:33.226  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts3068073108414669841]
-2019-07-01 17:42:34.629  INFO 3432 --- [    Test worker] wiremock.org.eclipse.jetty.util.log      : Logging initialized @9038ms
-2019-07-01 17:42:34.753  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
-2019-07-01 17:42:34.777  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@7dd3fff2{/__admin,null,AVAILABLE}
-2019-07-01 17:42:34.778  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@600b44ee{/,null,AVAILABLE}
-2019-07-01 17:42:34.787  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@5858a8c2{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:34.788  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @9197ms
-2019-07-01 17:42:34.789  INFO 3432 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
-2019-07-01 17:42:35.210  INFO 3432 --- [ qtp38231087-26] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:35.244  INFO 3432 --- [ qtp38231087-26] WireMock                                 : Admin request received:
+2019-07-01 22:47:36.485  INFO 8764 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-07-01 22:47:36.487  INFO 8764 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-01 22:47:36.680  INFO 8764 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-01 22:47:36.879  INFO 8764 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-01 22:47:36.977  INFO 8764 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-01 22:47:36.996  INFO 8764 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-07-01 22:47:37.232  INFO 8764 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-07-01 22:47:37.243  INFO 8764 --- [    Test worker] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@63a3149
+2019-07-01 22:47:37.498  INFO 8764 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-01 22:47:39.505  INFO 8764 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 22:47:39.590  WARN 8764 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-01 22:47:40.226  INFO 8764 --- [    Test worker] c.g.b.client.ClientApplicationTests      : Started ClientApplicationTests in 6.448 seconds (JVM running for 7.853)
+2019-07-01 22:47:40.272  INFO 8764 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2019-07-01 22:47:40.282  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2019-07-01 22:47:40.500  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2019-07-01 22:47:40.526  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
+2019-07-01 22:47:40.529  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
+2019-07-01 22:47:40.572  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts5763785935542726895]
+2019-07-01 22:47:42.068  INFO 8764 --- [    Test worker] wiremock.org.eclipse.jetty.util.log      : Logging initialized @9694ms
+2019-07-01 22:47:42.160  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-07-01 22:47:42.179  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@7e1ebacb{/__admin,null,AVAILABLE}
+2019-07-01 22:47:42.180  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@7e13349f{/,null,AVAILABLE}
+2019-07-01 22:47:42.189  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@65ba9ae3{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:42.189  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @9815ms
+2019-07-01 22:47:42.190  INFO 8764 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
+2019-07-01 22:47:42.570  INFO 8764 --- [tp1133994771-28] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:42.608  INFO 8764 --- [tp1133994771-28] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -176,7 +181,7 @@ Host: [localhost:8100]
 Content-Length: [236]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;9d114aa8-00e9-4ae6-8b06-f153d975b626&quot;,
+  &quot;id&quot; : &quot;6b0f69bb-507a-49bf-bc2d-50988bdcf91c&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/ping&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -185,10 +190,10 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;9d114aa8-00e9-4ae6-8b06-f153d975b626&quot;
+  &quot;uuid&quot; : &quot;6b0f69bb-507a-49bf-bc2d-50988bdcf91c&quot;
 }
 
-2019-07-01 17:42:35.356  INFO 3432 --- [ qtp38231087-27] WireMock                                 : Admin request received:
+2019-07-01 22:47:42.747  INFO 8764 --- [tp1133994771-30] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -197,7 +202,7 @@ Host: [localhost:8100]
 Content-Length: [238]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;79c8df60-599c-4a24-985a-5a580e9573e8&quot;,
+  &quot;id&quot; : &quot;6df86723-d225-4c5f-9adb-cb6c3b52ccf6&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/health&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -206,10 +211,35 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;79c8df60-599c-4a24-985a-5a580e9573e8&quot;
+  &quot;uuid&quot; : &quot;6df86723-d225-4c5f-9adb-cb6c3b52ccf6&quot;
 }
 
-2019-07-01 17:42:35.402  INFO 3432 --- [ qtp38231087-30] WireMock                                 : Admin request received:
+2019-07-01 22:47:42.796  INFO 8764 --- [tp1133994771-29] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [413]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores&quot;,
+    &quot;method&quot; : &quot;POST&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 201,
+    &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;12345\&quot;,\&quot;name\&quot;:\&quot;Exito\&quot;,\&quot;id_store\&quot;:\&quot;1\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;
+}
+
+2019-07-01 22:47:42.815  INFO 8764 --- [tp1133994771-31] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -218,7 +248,7 @@ Host: [localhost:8100]
 Content-Length: [508]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;,
+  &quot;id&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1/address/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -231,10 +261,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;
+  &quot;uuid&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;
 }
 
-2019-07-01 17:42:35.421  INFO 3432 --- [ qtp38231087-31] WireMock                                 : Admin request received:
+2019-07-01 22:47:42.837  INFO 8764 --- [tp1133994771-28] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -243,7 +273,7 @@ Host: [localhost:8100]
 Content-Length: [440]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;,
+  &quot;id&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -256,10 +286,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;
+  &quot;uuid&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;
 }
 
-2019-07-01 17:42:35.440  INFO 3432 --- [ qtp38231087-26] WireMock                                 : Admin request received:
+2019-07-01 22:47:42.845  INFO 8764 --- [tp1133994771-30] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -268,7 +298,7 @@ Host: [localhost:8100]
 Content-Length: [422]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;,
+  &quot;id&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/products/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -281,10 +311,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;
+  &quot;uuid&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;
 }
 
-2019-07-01 17:42:35.447  INFO 3432 --- [ qtp38231087-27] WireMock                                 : Admin request received:
+2019-07-01 22:47:42.852  INFO 8764 --- [tp1133994771-29] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -293,7 +323,7 @@ Host: [localhost:8100]
 Content-Length: [414]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;,
+  &quot;id&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -306,12 +336,227 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;
+  &quot;uuid&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;
 }
 
-2019-07-01 17:42:35.500  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
-2019-07-01 17:42:35.681  INFO 3432 --- [ qtp38231087-31] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:35.781  INFO 3432 --- [ qtp38231087-31] WireMock                                 : Request received:
+2019-07-01 22:47:42.901  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
+2019-07-01 22:47:43.088  INFO 8764 --- [tp1133994771-28] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:43.185  INFO 8764 --- [tp1133994771-28] WireMock                                 : Request received:
+127.0.0.1 - POST /stores
+
+User-Agent: [Java/1.8.0_211]
+Connection: [keep-alive]
+Host: [localhost:8100]
+Accept: [application/json, application/*+json]
+Content-Length: [45]
+Content-Type: [application/json;charset=UTF-8]
+{&quot;id_store&quot;:1,&quot;name&quot;:&quot;Exito&quot;,&quot;phone&quot;:&quot;12345&quot;}
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 201,
+  &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;12345\&quot;,\&quot;name\&quot;:\&quot;Exito\&quot;,\&quot;id_store\&quot;:\&quot;1\&quot;}&quot;,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  },
+  &quot;transformers&quot; : [ &quot;response-template&quot; ]
+}
+
+Response:
+HTTP/1.1 201
+Content-Type: [application/json]
+Matched-Stub-Id: [02dfe75c-726a-4061-8eaf-f22a0823acf6]
+
+
+2019-07-01 22:47:43.270  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@65ba9ae3{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:43.271  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@7e13349f{/,null,UNAVAILABLE}
+2019-07-01 22:47:43.272  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@7e1ebacb{/__admin,null,UNAVAILABLE}
+2019-07-01 22:47:43.274  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1133994771{STOPPING,8&lt;=8&lt;=10,i=3,q=5} Couldn't stop Thread[qtp1133994771-24,5,]
+2019-07-01 22:47:43.274  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1133994771{STOPPING,8&lt;=8&lt;=10,i=0,q=4} Couldn't stop Thread[qtp1133994771-27,5,]
+2019-07-01 22:47:43.276  INFO 8764 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2019-07-01 22:47:43.277  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2019-07-01 22:47:43.278  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2019-07-01 22:47:43.279  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
+2019-07-01 22:47:43.280  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
+2019-07-01 22:47:43.307  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts1482386383342006818]
+2019-07-01 22:47:43.484  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-07-01 22:47:43.486  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@752e395a{/__admin,null,AVAILABLE}
+2019-07-01 22:47:43.487  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@2827e41{/,null,AVAILABLE}
+2019-07-01 22:47:43.488  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@66263a2{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:43.488  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @11115ms
+2019-07-01 22:47:43.489  INFO 8764 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
+2019-07-01 22:47:43.493  INFO 8764 --- [tp1046824628-41] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:43.494  INFO 8764 --- [tp1046824628-41] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [236]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;7dce747a-c431-41ae-a0fe-7662b6106bc7&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/ping&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;body&quot; : &quot;OK&quot;
+  },
+  &quot;uuid&quot; : &quot;7dce747a-c431-41ae-a0fe-7662b6106bc7&quot;
+}
+
+2019-07-01 22:47:43.514  INFO 8764 --- [tp1046824628-42] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [238]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;4b938b85-15c6-4c8f-9545-8154a4d620c6&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/health&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;body&quot; : &quot;OK&quot;
+  },
+  &quot;uuid&quot; : &quot;4b938b85-15c6-4c8f-9545-8154a4d620c6&quot;
+}
+
+2019-07-01 22:47:43.535  INFO 8764 --- [tp1046824628-43] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [413]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores&quot;,
+    &quot;method&quot; : &quot;POST&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 201,
+    &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;12345\&quot;,\&quot;name\&quot;:\&quot;Exito\&quot;,\&quot;id_store\&quot;:\&quot;1\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;
+}
+
+2019-07-01 22:47:43.559  INFO 8764 --- [tp1046824628-44] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [508]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores/1/employees/1/address/1&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;body&quot; : &quot;{\&quot;country\&quot;:\&quot;USA\&quot;,\&quot;id_address\&quot;:\&quot;1\&quot;,\&quot;city\&quot;:\&quot;Miami\&quot;,\&quot;street\&quot;:\&quot;St 123\&quot;,\&quot;postalCode\&quot;:\&quot;010203\&quot;,\&quot;state\&quot;:\&quot;Florida\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;
+}
+
+2019-07-01 22:47:43.578  INFO 8764 --- [tp1046824628-41] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [440]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores/1/employees/1&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;320-3684334\&quot;,\&quot;id_employee\&quot;:\&quot;1\&quot;,\&quot;name\&quot;:\&quot;Juan Pablo\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;
+}
+
+2019-07-01 22:47:43.583  INFO 8764 --- [tp1046824628-42] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [422]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores/1/products/1&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;body&quot; : &quot;{\&quot;id_product\&quot;:\&quot;1\&quot;,\&quot;name\&quot;:\&quot;Tv\&quot;,\&quot;stock\&quot;:\&quot;100\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;
+}
+
+2019-07-01 22:47:43.587  INFO 8764 --- [tp1046824628-43] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [414]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores/1&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 200,
+    &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;12345\&quot;,\&quot;name\&quot;:\&quot;Exito\&quot;,\&quot;id_store\&quot;:\&quot;1\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;
+}
+
+2019-07-01 22:47:43.596  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
+2019-07-01 22:47:43.603  INFO 8764 --- [tp1046824628-44] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:43.606  INFO 8764 --- [tp1046824628-44] WireMock                                 : Request received:
 127.0.0.1 - GET /stores/1/products/1
 
 User-Agent: [Java/1.8.0_211]
@@ -334,27 +579,28 @@ Matched response definition:
 Response:
 HTTP/1.1 200
 Content-Type: [application/json]
-Matched-Stub-Id: [7eb25493-570e-474e-9cd6-59f151a9f9da]
+Matched-Stub-Id: [cd345038-64e3-4cf9-bca6-a4d9dbcc62f5]
 
 
-2019-07-01 17:42:35.866  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@5858a8c2{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:35.868  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@600b44ee{/,null,UNAVAILABLE}
-2019-07-01 17:42:35.869  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@7dd3fff2{/__admin,null,UNAVAILABLE}
-2019-07-01 17:42:35.872  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp38231087{STOPPING,8&lt;=8&lt;=10,i=0,q=1} Couldn't stop Thread[qtp38231087-26,5,]
-2019-07-01 17:42:35.874  INFO 3432 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
-2019-07-01 17:42:35.874  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
-2019-07-01 17:42:35.875  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
-2019-07-01 17:42:35.876  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
-2019-07-01 17:42:35.877  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
-2019-07-01 17:42:35.906  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts4061455761527763235]
-2019-07-01 17:42:36.066  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
-2019-07-01 17:42:36.069  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@23f848a6{/__admin,null,AVAILABLE}
-2019-07-01 17:42:36.069  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@4637518c{/,null,AVAILABLE}
-2019-07-01 17:42:36.071  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@276b8c94{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:36.072  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @10482ms
-2019-07-01 17:42:36.072  INFO 3432 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
-2019-07-01 17:42:36.076  INFO 3432 --- [qtp884699942-41] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:36.077  INFO 3432 --- [qtp884699942-41] WireMock                                 : Admin request received:
+2019-07-01 22:47:43.612  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@66263a2{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:43.613  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@2827e41{/,null,UNAVAILABLE}
+2019-07-01 22:47:43.613  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@752e395a{/__admin,null,UNAVAILABLE}
+2019-07-01 22:47:43.613  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1046824628{STOPPING,8&lt;=8&lt;=10,i=5,q=6} Couldn't stop Thread[qtp1046824628-44,5,]
+2019-07-01 22:47:43.614  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1046824628{STOPPING,8&lt;=8&lt;=10,i=0,q=5} Couldn't stop Thread[qtp1046824628-41,5,]
+2019-07-01 22:47:43.614  INFO 8764 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2019-07-01 22:47:43.615  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2019-07-01 22:47:43.616  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2019-07-01 22:47:43.617  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
+2019-07-01 22:47:43.617  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
+2019-07-01 22:47:43.652  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts719346425840986841]
+2019-07-01 22:47:43.819  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-07-01 22:47:43.821  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@2330acbd{/__admin,null,AVAILABLE}
+2019-07-01 22:47:43.821  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@156ab7d4{/,null,AVAILABLE}
+2019-07-01 22:47:43.823  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@3399a480{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:43.823  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @11450ms
+2019-07-01 22:47:43.824  INFO 8764 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
+2019-07-01 22:47:43.827  INFO 8764 --- [tp1362634518-55] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:43.828  INFO 8764 --- [tp1362634518-55] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -363,7 +609,7 @@ Host: [localhost:8100]
 Content-Length: [236]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;10da81af-dd3d-4acf-9e82-0db27cf8c91f&quot;,
+  &quot;id&quot; : &quot;78246ceb-d88c-43df-ba7d-7e07f63f0c27&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/ping&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -372,10 +618,10 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;10da81af-dd3d-4acf-9e82-0db27cf8c91f&quot;
+  &quot;uuid&quot; : &quot;78246ceb-d88c-43df-ba7d-7e07f63f0c27&quot;
 }
 
-2019-07-01 17:42:36.096  INFO 3432 --- [qtp884699942-42] WireMock                                 : Admin request received:
+2019-07-01 22:47:43.842  INFO 8764 --- [tp1362634518-56] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -384,7 +630,7 @@ Host: [localhost:8100]
 Content-Length: [238]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;24e94512-dd76-4e42-8dc2-98288ab86939&quot;,
+  &quot;id&quot; : &quot;973c28a7-0d7d-4047-8af8-08e1988c2078&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/health&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -393,10 +639,35 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;24e94512-dd76-4e42-8dc2-98288ab86939&quot;
+  &quot;uuid&quot; : &quot;973c28a7-0d7d-4047-8af8-08e1988c2078&quot;
 }
 
-2019-07-01 17:42:36.116  INFO 3432 --- [qtp884699942-43] WireMock                                 : Admin request received:
+2019-07-01 22:47:43.858  INFO 8764 --- [tp1362634518-57] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [413]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores&quot;,
+    &quot;method&quot; : &quot;POST&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 201,
+    &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;12345\&quot;,\&quot;name\&quot;:\&quot;Exito\&quot;,\&quot;id_store\&quot;:\&quot;1\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;
+}
+
+2019-07-01 22:47:43.873  INFO 8764 --- [tp1362634518-58] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -405,7 +676,7 @@ Host: [localhost:8100]
 Content-Length: [508]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;,
+  &quot;id&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1/address/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -418,10 +689,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;
+  &quot;uuid&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;
 }
 
-2019-07-01 17:42:36.134  INFO 3432 --- [qtp884699942-44] WireMock                                 : Admin request received:
+2019-07-01 22:47:43.890  INFO 8764 --- [tp1362634518-55] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -430,7 +701,7 @@ Host: [localhost:8100]
 Content-Length: [440]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;,
+  &quot;id&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -443,10 +714,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;
+  &quot;uuid&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;
 }
 
-2019-07-01 17:42:36.150  INFO 3432 --- [qtp884699942-41] WireMock                                 : Admin request received:
+2019-07-01 22:47:43.897  INFO 8764 --- [tp1362634518-56] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -455,7 +726,7 @@ Host: [localhost:8100]
 Content-Length: [422]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;,
+  &quot;id&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/products/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -468,10 +739,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;
+  &quot;uuid&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;
 }
 
-2019-07-01 17:42:36.156  INFO 3432 --- [qtp884699942-42] WireMock                                 : Admin request received:
+2019-07-01 22:47:43.903  INFO 8764 --- [tp1362634518-57] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -480,7 +751,7 @@ Host: [localhost:8100]
 Content-Length: [414]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;,
+  &quot;id&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -493,12 +764,12 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;
+  &quot;uuid&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;
 }
 
-2019-07-01 17:42:36.166  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
-2019-07-01 17:42:36.176  INFO 3432 --- [qtp884699942-43] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:36.179  INFO 3432 --- [qtp884699942-43] WireMock                                 : Request received:
+2019-07-01 22:47:43.909  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
+2019-07-01 22:47:43.915  INFO 8764 --- [tp1362634518-58] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:43.919  INFO 8764 --- [tp1362634518-58] WireMock                                 : Request received:
 127.0.0.1 - GET /stores/1/employees/1/address/1
 
 User-Agent: [Java/1.8.0_211]
@@ -521,30 +792,28 @@ Matched response definition:
 Response:
 HTTP/1.1 200
 Content-Type: [application/json]
-Matched-Stub-Id: [d0b77881-e933-4de4-ae81-4a85e4772ecb]
+Matched-Stub-Id: [19c53390-8c14-408d-865c-ec6f94ef39d7]
 
 
-2019-07-01 17:42:36.183  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@276b8c94{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:36.184  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@4637518c{/,null,UNAVAILABLE}
-2019-07-01 17:42:36.184  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@23f848a6{/__admin,null,UNAVAILABLE}
-2019-07-01 17:42:36.185  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp884699942{STOPPING,8&lt;=8&lt;=10,i=3,q=5} Couldn't stop Thread[qtp884699942-41,5,]
-2019-07-01 17:42:36.185  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp884699942{STOPPING,8&lt;=8&lt;=10,i=3,q=5} Couldn't stop Thread[qtp884699942-42,5,main]
-2019-07-01 17:42:36.186  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp884699942{STOPPING,8&lt;=8&lt;=10,i=3,q=5} Couldn't stop Thread[qtp884699942-46,5,main]
-2019-07-01 17:42:36.186  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp884699942{STOPPING,8&lt;=8&lt;=10,i=3,q=5} Couldn't stop Thread[qtp884699942-43,5,main]
-2019-07-01 17:42:36.188  INFO 3432 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
-2019-07-01 17:42:36.188  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
-2019-07-01 17:42:36.190  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
-2019-07-01 17:42:36.191  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
-2019-07-01 17:42:36.192  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
-2019-07-01 17:42:36.234  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts5287143766706169306]
-2019-07-01 17:42:36.352  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
-2019-07-01 17:42:36.354  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@3914c5fb{/__admin,null,AVAILABLE}
-2019-07-01 17:42:36.354  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@1f1e9268{/,null,AVAILABLE}
-2019-07-01 17:42:36.356  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@3ab76d{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:36.356  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @10766ms
-2019-07-01 17:42:36.356  INFO 3432 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
-2019-07-01 17:42:36.359  INFO 3432 --- [qtp780193024-55] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:36.360  INFO 3432 --- [qtp780193024-55] WireMock                                 : Admin request received:
+2019-07-01 22:47:43.924  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@3399a480{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:43.925  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@156ab7d4{/,null,UNAVAILABLE}
+2019-07-01 22:47:43.925  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@2330acbd{/__admin,null,UNAVAILABLE}
+2019-07-01 22:47:43.926  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1362634518{STOPPING,8&lt;=8&lt;=10,i=6,q=7} Couldn't stop Thread[qtp1362634518-55,5,main]
+2019-07-01 22:47:43.926  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1362634518{STOPPING,8&lt;=8&lt;=10,i=0,q=6} Couldn't stop Thread[qtp1362634518-51,5,]
+2019-07-01 22:47:43.928  INFO 8764 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2019-07-01 22:47:43.928  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2019-07-01 22:47:43.929  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2019-07-01 22:47:43.930  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
+2019-07-01 22:47:43.931  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
+2019-07-01 22:47:43.975  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts2634459481739452658]
+2019-07-01 22:47:44.151  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-07-01 22:47:44.153  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@75b78b17{/__admin,null,AVAILABLE}
+2019-07-01 22:47:44.153  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@420ef4b{/,null,AVAILABLE}
+2019-07-01 22:47:44.154  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@4d0623eb{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:44.155  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @11782ms
+2019-07-01 22:47:44.155  INFO 8764 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
+2019-07-01 22:47:44.158  INFO 8764 --- [tp1879750556-69] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:44.159  INFO 8764 --- [tp1879750556-69] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -553,7 +822,7 @@ Host: [localhost:8100]
 Content-Length: [236]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;32e8c9f4-affb-465b-bbff-9282a2cf8144&quot;,
+  &quot;id&quot; : &quot;b3af1fb8-e5c8-4cb2-abed-28102e98b4cf&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/ping&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -562,10 +831,10 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;32e8c9f4-affb-465b-bbff-9282a2cf8144&quot;
+  &quot;uuid&quot; : &quot;b3af1fb8-e5c8-4cb2-abed-28102e98b4cf&quot;
 }
 
-2019-07-01 17:42:36.375  INFO 3432 --- [qtp780193024-56] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.175  INFO 8764 --- [tp1879750556-70] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -574,7 +843,7 @@ Host: [localhost:8100]
 Content-Length: [238]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;fa2dd63f-f44a-4141-aaae-bc90a1ce4a31&quot;,
+  &quot;id&quot; : &quot;872325b8-1a7d-48be-8fb4-4b21dd84de49&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/health&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -583,10 +852,35 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;fa2dd63f-f44a-4141-aaae-bc90a1ce4a31&quot;
+  &quot;uuid&quot; : &quot;872325b8-1a7d-48be-8fb4-4b21dd84de49&quot;
 }
 
-2019-07-01 17:42:36.387  INFO 3432 --- [qtp780193024-57] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.191  INFO 8764 --- [tp1879750556-71] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [413]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores&quot;,
+    &quot;method&quot; : &quot;POST&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 201,
+    &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;12345\&quot;,\&quot;name\&quot;:\&quot;Exito\&quot;,\&quot;id_store\&quot;:\&quot;1\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;
+}
+
+2019-07-01 22:47:44.206  INFO 8764 --- [tp1879750556-72] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -595,7 +889,7 @@ Host: [localhost:8100]
 Content-Length: [508]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;,
+  &quot;id&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1/address/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -608,10 +902,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;
+  &quot;uuid&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;
 }
 
-2019-07-01 17:42:36.401  INFO 3432 --- [qtp780193024-58] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.222  INFO 8764 --- [tp1879750556-69] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -620,7 +914,7 @@ Host: [localhost:8100]
 Content-Length: [440]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;,
+  &quot;id&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -633,10 +927,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;
+  &quot;uuid&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;
 }
 
-2019-07-01 17:42:36.419  INFO 3432 --- [qtp780193024-55] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.229  INFO 8764 --- [tp1879750556-70] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -645,7 +939,7 @@ Host: [localhost:8100]
 Content-Length: [422]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;,
+  &quot;id&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/products/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -658,10 +952,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;
+  &quot;uuid&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;
 }
 
-2019-07-01 17:42:36.425  INFO 3432 --- [qtp780193024-56] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.235  INFO 8764 --- [tp1879750556-71] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -670,7 +964,7 @@ Host: [localhost:8100]
 Content-Length: [414]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;,
+  &quot;id&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -683,12 +977,12 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;
+  &quot;uuid&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;
 }
 
-2019-07-01 17:42:36.429  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
-2019-07-01 17:42:36.435  INFO 3432 --- [qtp780193024-57] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:36.437  INFO 3432 --- [qtp780193024-57] WireMock                                 : Request received:
+2019-07-01 22:47:44.240  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
+2019-07-01 22:47:44.250  INFO 8764 --- [tp1879750556-72] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:44.252  INFO 8764 --- [tp1879750556-72] WireMock                                 : Request received:
 127.0.0.1 - GET /stores/1/employees/1
 
 User-Agent: [Java/1.8.0_211]
@@ -711,28 +1005,28 @@ Matched response definition:
 Response:
 HTTP/1.1 200
 Content-Type: [application/json]
-Matched-Stub-Id: [21d35ca5-6f41-428c-aeb8-fbfcf97ed576]
+Matched-Stub-Id: [92fa536f-8d51-4131-93cf-837ae456400a]
 
 
-2019-07-01 17:42:36.442  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@3ab76d{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:36.442  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@1f1e9268{/,null,UNAVAILABLE}
-2019-07-01 17:42:36.442  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@3914c5fb{/__admin,null,UNAVAILABLE}
-2019-07-01 17:42:36.443  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp780193024{STOPPING,8&lt;=8&lt;=10,i=5,q=5} Couldn't stop Thread[qtp780193024-56,5,]
-2019-07-01 17:42:36.443  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp780193024{STOPPING,8&lt;=8&lt;=10,i=0,q=5} Couldn't stop Thread[qtp780193024-57,5,]
-2019-07-01 17:42:36.444  INFO 3432 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
-2019-07-01 17:42:36.445  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
-2019-07-01 17:42:36.447  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
-2019-07-01 17:42:36.448  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
-2019-07-01 17:42:36.449  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
-2019-07-01 17:42:36.477  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts3611407697162313226]
-2019-07-01 17:42:36.617  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
-2019-07-01 17:42:36.619  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@c9aa25c{/__admin,null,AVAILABLE}
-2019-07-01 17:42:36.619  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@74d343d0{/,null,AVAILABLE}
-2019-07-01 17:42:36.621  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@2d829754{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:36.621  INFO 3432 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @11030ms
-2019-07-01 17:42:36.621  INFO 3432 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
-2019-07-01 17:42:36.625  INFO 3432 --- [tp2023562138-69] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:36.626  INFO 3432 --- [tp2023562138-69] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.257  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@4d0623eb{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:44.258  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@420ef4b{/,null,UNAVAILABLE}
+2019-07-01 22:47:44.258  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@75b78b17{/__admin,null,UNAVAILABLE}
+2019-07-01 22:47:44.259  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1879750556{STOPPING,8&lt;=8&lt;=10,i=6,q=6} Couldn't stop Thread[qtp1879750556-74,5,]
+2019-07-01 22:47:44.259  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp1879750556{STOPPING,8&lt;=8&lt;=10,i=0,q=5} Couldn't stop Thread[qtp1879750556-65,5,]
+2019-07-01 22:47:44.260  INFO 8764 --- [    Test worker] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2019-07-01 22:47:44.261  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2019-07-01 22:47:44.265  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2019-07-01 22:47:44.267  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [com.globant.bootcamp:shop:jar:stubs:0.0.1-SNAPSHOT] to C:\Users\Usuario\.m2\repository\com\globant\bootcamp\shop\0.0.1-SNAPSHOT\shop-0.0.1-SNAPSHOT-stubs.jar
+2019-07-01 22:47:44.268  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/C:/Users/Usuario/.m2/repository/com/globant/bootcamp/shop/0.0.1-SNAPSHOT/shop-0.0.1-SNAPSHOT-stubs.jar]
+2019-07-01 22:47:44.296  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [C:\Users\Usuario\AppData\Local\Temp\contracts7181871856655735735]
+2019-07-01 22:47:44.451  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2019-07-01 22:47:44.452  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@668b2d72{/__admin,null,AVAILABLE}
+2019-07-01 22:47:44.453  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@33e63951{/,null,AVAILABLE}
+2019-07-01 22:47:44.454  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@c3972e2{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:44.454  INFO 8764 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @12081ms
+2019-07-01 22:47:44.455  INFO 8764 --- [    Test worker] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs] on port 8100
+2019-07-01 22:47:44.457  INFO 8764 --- [qtp354501673-83] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:44.458  INFO 8764 --- [qtp354501673-83] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -741,7 +1035,7 @@ Host: [localhost:8100]
 Content-Length: [236]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;91f64b2b-0dc1-4dcb-886d-206ea5d2f701&quot;,
+  &quot;id&quot; : &quot;384f49de-67e2-4423-ab23-07146e329118&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/ping&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -750,10 +1044,10 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;91f64b2b-0dc1-4dcb-886d-206ea5d2f701&quot;
+  &quot;uuid&quot; : &quot;384f49de-67e2-4423-ab23-07146e329118&quot;
 }
 
-2019-07-01 17:42:36.641  INFO 3432 --- [tp2023562138-70] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.473  INFO 8764 --- [qtp354501673-84] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -762,7 +1056,7 @@ Host: [localhost:8100]
 Content-Length: [238]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;1a53ff56-2248-4798-b5f1-6c4c86f1a2ee&quot;,
+  &quot;id&quot; : &quot;b34590c2-efcb-4048-9d64-9140ea6a286e&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/health&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -771,10 +1065,35 @@ Content-Type: [text/plain; charset=UTF-8]
     &quot;status&quot; : 200,
     &quot;body&quot; : &quot;OK&quot;
   },
-  &quot;uuid&quot; : &quot;1a53ff56-2248-4798-b5f1-6c4c86f1a2ee&quot;
+  &quot;uuid&quot; : &quot;b34590c2-efcb-4048-9d64-9140ea6a286e&quot;
 }
 
-2019-07-01 17:42:36.655  INFO 3432 --- [tp2023562138-71] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.485  INFO 8764 --- [qtp354501673-85] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/4.5.5 (Java/1.8.0_211)]
+Host: [localhost:8100]
+Content-Length: [413]
+Content-Type: [text/plain; charset=UTF-8]
+{
+  &quot;id&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;,
+  &quot;request&quot; : {
+    &quot;url&quot; : &quot;/stores&quot;,
+    &quot;method&quot; : &quot;POST&quot;
+  },
+  &quot;response&quot; : {
+    &quot;status&quot; : 201,
+    &quot;body&quot; : &quot;{\&quot;phone\&quot;:\&quot;12345\&quot;,\&quot;name\&quot;:\&quot;Exito\&quot;,\&quot;id_store\&quot;:\&quot;1\&quot;}&quot;,
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;transformers&quot; : [ &quot;response-template&quot; ]
+  },
+  &quot;uuid&quot; : &quot;02dfe75c-726a-4061-8eaf-f22a0823acf6&quot;
+}
+
+2019-07-01 22:47:44.495  INFO 8764 --- [qtp354501673-86] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -783,7 +1102,7 @@ Host: [localhost:8100]
 Content-Length: [508]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;,
+  &quot;id&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1/address/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -796,10 +1115,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;d0b77881-e933-4de4-ae81-4a85e4772ecb&quot;
+  &quot;uuid&quot; : &quot;19c53390-8c14-408d-865c-ec6f94ef39d7&quot;
 }
 
-2019-07-01 17:42:36.669  INFO 3432 --- [tp2023562138-72] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.510  INFO 8764 --- [qtp354501673-83] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -808,7 +1127,7 @@ Host: [localhost:8100]
 Content-Length: [440]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;,
+  &quot;id&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/employees/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -821,10 +1140,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;21d35ca5-6f41-428c-aeb8-fbfcf97ed576&quot;
+  &quot;uuid&quot; : &quot;92fa536f-8d51-4131-93cf-837ae456400a&quot;
 }
 
-2019-07-01 17:42:36.681  INFO 3432 --- [tp2023562138-69] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.516  INFO 8764 --- [qtp354501673-84] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -833,7 +1152,7 @@ Host: [localhost:8100]
 Content-Length: [422]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;,
+  &quot;id&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1/products/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -846,10 +1165,10 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;7eb25493-570e-474e-9cd6-59f151a9f9da&quot;
+  &quot;uuid&quot; : &quot;cd345038-64e3-4cf9-bca6-a4d9dbcc62f5&quot;
 }
 
-2019-07-01 17:42:36.688  INFO 3432 --- [tp2023562138-70] WireMock                                 : Admin request received:
+2019-07-01 22:47:44.520  INFO 8764 --- [qtp354501673-85] WireMock                                 : Admin request received:
 127.0.0.1 - POST /mappings
 
 Connection: [keep-alive]
@@ -858,7 +1177,7 @@ Host: [localhost:8100]
 Content-Length: [414]
 Content-Type: [text/plain; charset=UTF-8]
 {
-  &quot;id&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;,
+  &quot;id&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;,
   &quot;request&quot; : {
     &quot;url&quot; : &quot;/stores/1&quot;,
     &quot;method&quot; : &quot;GET&quot;
@@ -871,12 +1190,12 @@ Content-Type: [text/plain; charset=UTF-8]
     },
     &quot;transformers&quot; : [ &quot;response-template&quot; ]
   },
-  &quot;uuid&quot; : &quot;a2cf008e-1385-40f4-b53c-b55e3e1df123&quot;
+  &quot;uuid&quot; : &quot;de384749-288a-4525-b73d-5d3ad787138f&quot;
 }
 
-2019-07-01 17:42:36.693  INFO 3432 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
-2019-07-01 17:42:36.700  INFO 3432 --- [tp2023562138-71] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
-2019-07-01 17:42:36.701  INFO 3432 --- [tp2023562138-71] WireMock                                 : Request received:
+2019-07-01 22:47:44.529  INFO 8764 --- [    Test worker] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={com.globant.bootcamp:shop:0.0.1-SNAPSHOT:stubs=8100}]
+2019-07-01 22:47:44.534  INFO 8764 --- [qtp354501673-86] /                                        : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2019-07-01 22:47:44.536  INFO 8764 --- [qtp354501673-86] WireMock                                 : Request received:
 127.0.0.1 - GET /stores/1
 
 User-Agent: [Java/1.8.0_211]
@@ -899,14 +1218,15 @@ Matched response definition:
 Response:
 HTTP/1.1 200
 Content-Type: [application/json]
-Matched-Stub-Id: [a2cf008e-1385-40f4-b53c-b55e3e1df123]
+Matched-Stub-Id: [de384749-288a-4525-b73d-5d3ad787138f]
 
 
-2019-07-01 17:42:36.706  INFO 3432 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@2d829754{HTTP/1.1}{0.0.0.0:8100}
-2019-07-01 17:42:36.706  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@74d343d0{/,null,UNAVAILABLE}
-2019-07-01 17:42:36.707  INFO 3432 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@c9aa25c{/__admin,null,UNAVAILABLE}
-2019-07-01 17:42:36.707  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp2023562138{STOPPING,8&lt;=8&lt;=10,i=7,q=7} Couldn't stop Thread[qtp2023562138-65,5,]
-2019-07-01 17:42:36.707  WARN 3432 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp2023562138{STOPPING,8&lt;=8&lt;=10,i=0,q=6} Couldn't stop Thread[qtp2023562138-70,5,]
+2019-07-01 22:47:44.541  INFO 8764 --- [    Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@c3972e2{HTTP/1.1}{0.0.0.0:8100}
+2019-07-01 22:47:44.542  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@33e63951{/,null,UNAVAILABLE}
+2019-07-01 22:47:44.542  INFO 8764 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@668b2d72{/__admin,null,UNAVAILABLE}
+2019-07-01 22:47:44.543  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp354501673{STOPPING,8&lt;=8&lt;=10,i=4,q=6} Couldn't stop Thread[qtp354501673-83,5,]
+2019-07-01 22:47:44.543  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp354501673{STOPPING,8&lt;=8&lt;=10,i=1,q=5} Couldn't stop Thread[qtp354501673-85,5,]
+2019-07-01 22:47:44.543  WARN 8764 --- [    Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp354501673{STOPPING,8&lt;=8&lt;=10,i=0,q=5} Couldn't stop Thread[qtp354501673-88,5,]
 </pre>
 </span>
 </div>
@@ -918,7 +1238,7 @@ Matched-Stub-Id: [a2cf008e-1385-40f4-b53c-b55e3e1df123]
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.4.1</a> at 1/07/2019 05:42:36 PM</p>
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at 1/07/2019 10:47:44 PM</p>
 </div>
 </div>
 </body>

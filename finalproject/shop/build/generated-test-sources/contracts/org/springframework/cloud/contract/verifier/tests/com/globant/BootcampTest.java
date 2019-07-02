@@ -20,6 +20,25 @@ import static org.springframework.cloud.contract.verifier.util.ContractVerifierU
 public class BootcampTest extends BaseClass {
 
 	@Test
+	public void validate_create_store() throws Exception {
+		// given:
+			MockMvcRequestSpecification request = given();
+
+		// when:
+			ResponseOptions response = given().spec(request)
+					.post("/stores");
+
+		// then:
+			assertThat(response.statusCode()).isEqualTo(201);
+			assertThat(response.header("Content-Type")).matches("application/json.*");
+		// and:
+			DocumentContext parsedJson = JsonPath.parse(response.getBody().asString());
+			assertThatJson(parsedJson).field("['phone']").isEqualTo("12345");
+			assertThatJson(parsedJson).field("['id_store']").isEqualTo("1");
+			assertThatJson(parsedJson).field("['name']").isEqualTo("Exito");
+	}
+
+	@Test
 	public void validate_find_address_by_id() throws Exception {
 		// given:
 			MockMvcRequestSpecification request = given();

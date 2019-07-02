@@ -1,14 +1,9 @@
 package com.globant.bootcamp.client.endpoint;
 
-import com.globant.bootcamp.client.model.Address;
-import com.globant.bootcamp.client.model.Employee;
-import com.globant.bootcamp.client.model.Product;
-import com.globant.bootcamp.client.model.Store;
+import com.globant.bootcamp.client.model.*;
 import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
@@ -52,6 +47,15 @@ public class ClientEndPoint {
                 Address.class, id_store, id_employee, id_address);
         return "Country: " + address.getCountry() + "  State: " + address.getState() + "  City: " + address.getCity() +
                 "  Street: " + address.getStreet() + "  Postal Code: " + address.getPostalCode();
+    }
+
+    @PostMapping("/stores")
+    public String createStore(@RequestBody Store store) {
+
+        StoreVO storeVO = this.restTemplate.postForObject("http://localhost:8000/stores", store, StoreVO.class);
+
+        return "Store: " + storeVO.getName() + "  Created at " + storeVO.getCreationDate();
+
     }
 
 }

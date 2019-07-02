@@ -2,25 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de1fd101-7931-4ccb-802c-443f3e52b7b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_address_by_id.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_employee_by_id.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_product_by_id.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/StoreVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/create_store.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/finalproject-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/finalproject-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/classes/java/main/com/globant/bootcamp/client/endpoint/ClientEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/classes/java/main/com/globant/bootcamp/client/endpoint/ClientEndPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/classes/java/main/com/globant/bootcamp/client/model/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/classes/java/main/com/globant/bootcamp/client/model/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/classes/java/test/com/globant/bootcamp/client/ClientApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/classes/java/test/com/globant/bootcamp/client/ClientApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/libs/client-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/libs/client-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/reports/tests/test/classes/com.globant.bootcamp.client.ClientApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/reports/tests/test/classes/com.globant.bootcamp.client.ClientApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/reports/tests/test/packages/com.globant.bootcamp.client.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/reports/tests/test/packages/com.globant.bootcamp.client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/test-results/test/TEST-com.globant.bootcamp.client.ClientApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/test-results/test/TEST-com.globant.bootcamp.client.ClientApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/out/production/classes/com/globant/bootcamp/client/endpoint/ClientEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/out/production/classes/com/globant/bootcamp/client/endpoint/ClientEndPoint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/out/production/classes/com/globant/bootcamp/client/model/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/out/production/classes/com/globant/bootcamp/client/model/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/out/production/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/endpoint/ClientEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/endpoint/ClientEndPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Store.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/test/java/com/globant/bootcamp/client/ClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/test/java/com/globant/bootcamp/client/ClientApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/shop/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/shop/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -32,56 +52,39 @@
       <change beforePath="$PROJECT_DIR$/shop/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/shop/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/shop/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/shop/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/shop/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/ShopApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/ShopApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/AddressEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/AddressEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/EmployeeEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/EmployeeEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/ProductEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/ProductEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/StoreEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/endpoint/StoreEndPoint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/AuditModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/AuditModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/model/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/AddressVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/AddressVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/EmployeeVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/EmployeeVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/ProductVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/ProductVO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/StoreVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/main/com/globant/bootcamp/shop/resources/vo/StoreVO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/classes/java/test/com/globant/bootcamp/shop/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/test/com/globant/bootcamp/shop/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/classes/java/test/org/springframework/cloud/contract/verifier/tests/com/globant/BootcampTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/classes/java/test/org/springframework/cloud/contract/verifier/tests/com/globant/BootcampTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/generated-test-sources/contracts/org/springframework/cloud/contract/verifier/tests/com/globant/BootcampTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/generated-test-sources/contracts/org/springframework/cloud/contract/verifier/tests/com/globant/BootcampTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/libs/shop-0.0.1-SNAPSHOT-stubs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/libs/shop-0.0.1-SNAPSHOT-stubs.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/libs/shop-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/libs/shop-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/resources/test/contracts/com/globant/bootcamp/find_store_by_id.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/resources/test/contracts/com/globant/bootcamp/find_store_by_id.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/contracts/com/globant/bootcamp/find_store_by_id.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/contracts/com/globant/bootcamp/find_store_by_id.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/reports/tests/test/classes/org.springframework.cloud.contract.verifier.tests.com.globant.BootcampTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/reports/tests/test/classes/org.springframework.cloud.contract.verifier.tests.com.globant.BootcampTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/reports/tests/test/packages/org.springframework.cloud.contract.verifier.tests.com.globant.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/reports/tests/test/packages/org.springframework.cloud.contract.verifier.tests.com.globant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_address_by_id.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_address_by_id.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_employee_by_id.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_employee_by_id.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_product_by_id.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_product_by_id.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_store_by_id.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/stubs/META-INF/com.globant.bootcamp/shop/0.0.1-SNAPSHOT/mappings/com/globant/bootcamp/find_store_by_id.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/ShopApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/ShopApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/AddressEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/AddressEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/EmployeeEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/EmployeeEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/ProductEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/ProductEndPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/StoreEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/endpoint/StoreEndPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/test-results/test/TEST-org.springframework.cloud.contract.verifier.tests.com.globant.BootcampTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/test-results/test/TEST-org.springframework.cloud.contract.verifier.tests.com.globant.BootcampTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/shop/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/AuditModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/AuditModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/model/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/AddressVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/AddressVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/EmployeeVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/EmployeeVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/ProductVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/ProductVO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/StoreVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/classes/com/globant/bootcamp/shop/resources/vo/StoreVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/ShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/ShopApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/StoreVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/StoreVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/ShopApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_store_by_id.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_store_by_id.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -111,20 +114,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+            <state relative-caret-position="237">
+              <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop/build/generated-test-sources/contracts/org/springframework/cloud/contract/verifier/tests/com/globant/BootcampTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -132,11 +126,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/endpoint/ClientEndPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            <state relative-caret-position="238">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/create_store.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -144,56 +147,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-542">
-              <caret line="324" column="76" selection-start-line="324" selection-start-column="76" selection-end-line="324" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-408">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/ProductEndPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/EmployeeEndPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/AddressEndPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-515">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/test/java/com/globant/bootcamp/client/ClientApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+            <state relative-caret-position="250">
+              <caret line="100" column="50" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_store_by_id.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -208,10 +181,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_store_by_id.groovy">
+        <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_employee_by_id.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_address_by_id.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/service/StoreService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+              <folding>
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -244,29 +239,31 @@
         <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/repository/EmployeeRepository.java" />
         <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/service/EmployeeService.java" />
         <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/service/AddressService.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Store.java" />
-        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/StoreVO.java" />
         <option value="$PROJECT_DIR$/client/build.gradle" />
-        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Store.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/shop/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/client/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Product.java" />
-        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Product.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Employee.java" />
-        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Employee.java" />
         <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Address.java" />
-        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Address.java" />
         <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/ShopApplication.java" />
-        <option value="$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/BaseClass.java" />
         <option value="$PROJECT_DIR$/shop/build.gradle" />
-        <option value="$PROJECT_DIR$/client/src/test/java/com/globant/bootcamp/client/ClientApplicationTests.java" />
         <option value="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_address_by_id.groovy" />
         <option value="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_employee_by_id.groovy" />
         <option value="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_product_by_id.groovy" />
         <option value="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_store_by_id.groovy" />
-        <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/endpoint/ClientEndPoint.java" />
+        <option value="$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/BaseClass.java" />
+        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Product.java" />
+        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Employee.java" />
+        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Address.java" />
+        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/StoreVO.java" />
+        <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Store.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/StoreVO.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Store.java" />
+        <option value="$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/create_store.groovy" />
         <option value="$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java" />
+        <option value="$PROJECT_DIR$/client/src/test/java/com/globant/bootcamp/client/ClientApplicationTests.java" />
+        <option value="$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/endpoint/ClientEndPoint.java" />
       </list>
     </option>
   </component>
@@ -577,6 +574,33 @@
               <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="globant" type="462c0819:PsiDirectoryNode" />
+              <item name="bootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="globant" type="462c0819:PsiDirectoryNode" />
+              <item name="bootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finalproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finalproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -734,7 +758,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BootcampTest">
+  <component name="RunManager" selected="JUnit.BootcampTest.validate_create_store">
     <configuration name="BaseClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finalproject.shop.test" />
       <extension name="coverage">
@@ -761,6 +785,22 @@
       <option name="PACKAGE_NAME" value="org.springframework.cloud.contract.verifier.tests.com.globant" />
       <option name="MAIN_CLASS_NAME" value="org.springframework.cloud.contract.verifier.tests.com.globant.BootcampTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootcampTest.validate_create_store" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finalproject.shop.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springframework.cloud.contract.verifier.tests.com.globant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springframework.cloud.contract.verifier.tests.com.globant" />
+      <option name="MAIN_CLASS_NAME" value="org.springframework.cloud.contract.verifier.tests.com.globant.BootcampTest" />
+      <option name="METHOD_NAME" value="validate_create_store" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -797,21 +837,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finalproject.client.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.globant.bootcamp.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.globant.bootcamp.client" />
-      <option name="MAIN_CLASS_NAME" value="com.globant.bootcamp.client.ClientApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="finalproject.client.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.globant.bootcamp.client.ClientApplication" />
@@ -828,11 +853,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BootcampTest.validate_create_store" />
         <item itemvalue="JUnit.BootcampTest" />
         <item itemvalue="JUnit.BaseClass" />
         <item itemvalue="JUnit.BootcampTest.validate_find_store_by_id" />
         <item itemvalue="JUnit.BootcampTest.validate_find_address_by_id" />
-        <item itemvalue="JUnit.ClientApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -855,20 +880,11 @@
       <workItem from="1561911821189" duration="26655000" />
       <workItem from="1561983685136" duration="1207000" />
       <workItem from="1561988163184" duration="4342000" />
-      <workItem from="1561993747388" duration="23633000" />
+      <workItem from="1561993747388" duration="37178000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BootcampTest_validate_find_store_by_id - 2019.07.01 at 17h 04m 33s.xml">
-      <configuration name="BootcampTest.validate_find_store_by_id" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClientApplicationTests - 2019.07.01 at 17h 13m 54s.xml">
-      <configuration name="ClientApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BaseClass - 2019.07.01 at 17h 16m 22s.xml">
-      <configuration name="BaseClass" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BootcampTest_validate_find_address_by_id - 2019.07.01 at 17h 16m 53s.xml">
       <configuration name="BootcampTest.validate_find_address_by_id" configurationId="JUnit" />
     </history-entry>
@@ -890,9 +906,18 @@
     <history-entry file="BootcampTest - 2019.07.01 at 17h 44m 17s.xml">
       <configuration name="BootcampTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BootcampTest_validate_create_store - 2019.07.01 at 20h 01m 39s.xml">
+      <configuration name="BootcampTest.validate_create_store" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BootcampTest_validate_create_store - 2019.07.01 at 20h 13m 35s.xml">
+      <configuration name="BootcampTest.validate_create_store" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BootcampTest_validate_create_store - 2019.07.01 at 20h 18m 35s.xml">
+      <configuration name="BootcampTest.validate_create_store" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90600000" />
+    <option name="totallyTimeSpent" value="104145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -946,35 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/AddressVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/EmployeeVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/ProductVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/service/ProductService.java" />
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/AuditModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/repository/EmployeeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1011,13 +1008,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/service/AddressService.java" />
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/StoreVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1065,71 +1055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#43#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#47#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#49#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#47#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,68 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/service/StoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_address_by_id.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_employee_by_id.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_store_by_id.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/endpoint/ClientEndPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_product_by_id.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/test/java/com/globant/bootcamp/client/ClientApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542">
-          <caret line="324" column="76" selection-start-line="324" selection-start-column="76" selection-end-line="324" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1249,13 +1116,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        <state relative-caret-position="30">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#49#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#47#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/EmployeeVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/AddressVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/AuditModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#0#43#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.6.RELEASE/d6c2a24d22131dd891c73ebc3c9ab3ee00fcbb8f/spring-data-commons-2.1.6.RELEASE-sources.jar!/org/springframework/data/repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.6.RELEASE/d6c2a24d22131dd891c73ebc3c9ab3ee00fcbb8f/spring-data-commons-2.1.6.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1263,6 +1200,131 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/StoreVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/resources/vo/ProductVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#47#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/StoreVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/model/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/test/java/com/globant/bootcamp/shop/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/bussiness/service/StoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/main/java/com/globant/bootcamp/shop/endpoint/StoreEndPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_store_by_id.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_product_by_id.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_employee_by_id.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/find_address_by_id.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/src/test/resources/contracts/com/globant/bootcamp/create_store.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/globant/bootcamp/client/endpoint/ClientEndPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/test/java/com/globant/bootcamp/client/ClientApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="100" column="50" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
         </state>
       </provider>
     </entry>
