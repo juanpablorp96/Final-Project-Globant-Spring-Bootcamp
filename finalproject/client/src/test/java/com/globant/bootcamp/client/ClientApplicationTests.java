@@ -1,10 +1,8 @@
 package com.globant.bootcamp.client;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.globant.bootcamp.client.model.*;
-import com.sun.jndi.toolkit.url.Uri;
-import org.apache.commons.collections.map.HashedMap;
+import org.apache.http.entity.ContentType;
 import org.assertj.core.api.BDDAssertions;
 import org.junit.Rule;
 import org.junit.Test;
@@ -13,12 +11,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.stubrunner.junit.StubRunnerRule;
 import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties;
 import org.springframework.http.*;
+import org.springframework.http.converter.cbor.MappingJackson2CborHttpMessageConverter;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import java.util.HashMap;
+import java.util.Map;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -98,6 +99,16 @@ public class ClientApplicationTests {
 	}
 
 	@Test
+	public void delete_store_from_service_contract() {
+		// given:
+		RestTemplate restTemplate = new RestTemplate();
+
+		// when:
+		restTemplate.delete(
+				"http://localhost:8100/stores/1", Store.class);
+	}
+
+	@Test
 	public void post_store_from_service_contract() {
 		// given:
 		RestTemplate restTemplate = new RestTemplate();
@@ -112,6 +123,30 @@ public class ClientApplicationTests {
 		BDDAssertions.then(entity.getBody().getId_store() == 1);
 		BDDAssertions.then(entity.getBody().getName()).isEqualTo("Exito");
 		BDDAssertions.then(entity.getBody().getPhone()).isEqualTo("12345");
+
+	}
+
+	@Test
+	public void put_store_from_service_contract() {
+		// given:
+		RestTemplate restTemplate = new RestTemplate();
+
+		// when:
+		Store store = new Store(2, "PriceSmart", "00000");
+
+		HttpHeaders httpHeaders = new HttpHeaders();
+		httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+		HttpEntity<Object> httpEntity = new HttpEntity<>(store, httpHeaders);
+		ResponseEntity<StoreVO> entity = restTemplate
+				.exchange("http://localhost:8100/stores/2", HttpMethod.PUT, httpEntity, StoreVO.class);
+
+		// then:
+		BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(200);
+		BDDAssertions.then(entity.getBody().getId_store() == 2);
+		BDDAssertions.then(entity.getBody().getName()).isEqualTo("PriceSmart");
+		BDDAssertions.then(entity.getBody().getPhone()).isEqualTo("00000");
+
+
 
 	}
 

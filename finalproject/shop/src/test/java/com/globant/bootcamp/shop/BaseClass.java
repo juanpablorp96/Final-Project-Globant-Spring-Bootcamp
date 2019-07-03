@@ -10,16 +10,26 @@ import com.globant.bootcamp.shop.model.Employee;
 import com.globant.bootcamp.shop.model.Product;
 import com.globant.bootcamp.shop.model.Store;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import static org.mockito.ArgumentMatchers.any;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MockMvcBuilder;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 /**
  * To verify an API provider (the Spring controller in our case), Spring Cloud Contract automatically generates JUnit
@@ -68,10 +78,9 @@ public abstract class BaseClass {
                         "St 123", "010203", new Employee(1, "Juan Pablo",
                         "320-3684334", new Store(1, "Exito", "12345")))));
 
-        Mockito.when(storeService.create(new Store(1, "Exito", "12345")))
-                .thenReturn(new Store(1, "Exito", "12345"));
+        Mockito.when(storeService.create(any(Store.class))).thenReturn(new Store(1, "Exito", "12345"));
 
 
-    }
+}
 
 }

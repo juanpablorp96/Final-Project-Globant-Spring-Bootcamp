@@ -58,4 +58,13 @@ public class ClientEndPoint {
 
     }
 
+    @DeleteMapping("/stores/{id_store}")
+    public String deleteStore(@PathVariable("id_store") int id_store) {
+
+        this.restTemplate.delete("http://localhost:8000/stores/{id_store}", id_store);
+        return "Store with ID : " + id_store + " deleted";
+    }
+
+
+
 }

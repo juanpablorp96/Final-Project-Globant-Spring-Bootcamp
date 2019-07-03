@@ -56,6 +56,7 @@ public class StoreEndPoint {
         store.setPhone(storeVO.getPhone());
 
         return new ResponseEntity<>(this.storeService.create(store), HttpStatus.CREATED);
+
     }
 
     @GetMapping("/{id_store}")

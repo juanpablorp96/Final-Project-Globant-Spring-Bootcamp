@@ -2,6 +2,8 @@ package com.globant.bootcamp.shop.bussiness.service;
 
 import com.globant.bootcamp.shop.bussiness.repository.StoreRepository;
 import com.globant.bootcamp.shop.model.Store;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
