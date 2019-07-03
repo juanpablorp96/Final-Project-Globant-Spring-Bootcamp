@@ -45,6 +45,8 @@ dependencies {
 	implementation 'org.webjars:swagger-ui:3.10.0'
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.data:spring-data-rest-hal-browser'
 }
 
 dependencyManagement {

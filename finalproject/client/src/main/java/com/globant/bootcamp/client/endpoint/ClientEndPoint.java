@@ -65,6 +65,40 @@ public class ClientEndPoint {
         return "Store with ID : " + id_store + " deleted";
     }
 
+    @PostMapping("/stores/{id_store}/products")
+    public String createStoreProduct(@PathVariable("id_store") int id_store, @RequestBody Product product) {
+
+        ProductVO productVO = this.restTemplate.postForObject("http://localhost:8000/stores/{id_store}/products",
+                product, ProductVO.class, id_store);
+
+        return "Product: " + productVO.getName() + "  Created at " + productVO.getCreationDate();
+
+    }
+
+    @DeleteMapping("/stores/{id_store}/products/{id_product}")
+    public String deleteProduct(@PathVariable("id_store") int id_store, @PathVariable("id_product") int id_product) {
+
+        this.restTemplate.delete("http://localhost:8000/stores/{id_store}/products/{id_product}", id_store, id_product);
+        return "Product with ID : " + id_product + " deleted";
+    }
+
+    @PostMapping("/stores/{id_store}/employees")
+    public String createStoreEmployee(@PathVariable("id_store") int id_store, @RequestBody Employee employee) {
+
+        EmployeeVO employeeVO = this.restTemplate.postForObject("http://localhost:8000/stores/{id_store}/employees",
+                employee, EmployeeVO.class, id_store);
+
+        return "Employee: " + employeeVO.getName() + "  Created at " + employeeVO.getCreationDate();
+
+    }
+
+    @DeleteMapping("/stores/{id_store}/employees/{id_employee}")
+    public String deleteEmployee(@PathVariable("id_store") int id_store, @PathVariable("id_employee") int id_employee) {
+
+        this.restTemplate.delete("http://localhost:8000/stores/{id_store}/employees/{id_employee}", id_store, id_employee);
+        return "Employee with ID : " + id_employee + " deleted";
+    }
+
 
 
 }
